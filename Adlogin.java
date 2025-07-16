@@ -140,7 +140,7 @@ public class Adlogin extends javax.swing.JFrame {
         }
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/regdetails","root","Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/regdetails","******","*********");
                 
             PreparedStatement pstm = con.prepareStatement("SELECT * FROM Adid WHERE adminid = ? AND apass = ? ");
             pstm.setString(1,user);
