@@ -31,7 +31,7 @@ public class StudentDetails extends javax.swing.JFrame {
         try{
             //Connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails","root","Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails","******","*********");
             
             PreparedStatement pstm = con.prepareStatement("SELECT * FROM details");
             ResultSet rs = pstm.executeQuery();
@@ -188,7 +188,7 @@ public class StudentDetails extends javax.swing.JFrame {
         try{
             //Connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails","root","Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails","******","*********");
             
             PreparedStatement pstm = con.prepareStatement("SELECT * FROM details WHERE Rollno LIKE ? OR Name LIKE ? OR Marks LIKE ? OR Results LIKE ? OR Contact LIKE ? OR Address LIKE ?");
             
