@@ -188,7 +188,7 @@ public class EditPage extends javax.swing.JFrame {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails", "root", "Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails", "******","*********");
 
             String sql = "UPDATE details SET Name = ?, Marks = ?, Results = ?, Contact = ?, Address = ? WHERE Rollno = ?";
             PreparedStatement pstmt = con.prepareStatement(sql);
