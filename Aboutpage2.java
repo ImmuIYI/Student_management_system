@@ -29,7 +29,7 @@ public class Aboutpage2 extends javax.swing.JFrame {
     private void fetchData(String rollNo) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/aboutstu", "root", "Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/aboutstu", "******","*********");
 
             PreparedStatement pstm = con.prepareStatement("SELECT * FROM abostu WHERE rollno = ?");
             pstm.setString(1, rollNo);
