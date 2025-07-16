@@ -1,28 +1,39 @@
-# College Registration & Login System
+# 🎓 College Graduated Students Management System (Java Swing)
 
-A simple Java desktop application to handle faculty registration and login functionality for a college system using Swing GUI and MySQL for database storage.
+A desktop-based Java Swing application to manage records of already graduated students. Built purely using Java Swing and JDBC with MySQL — no frameworks like Spring Boot or REST APIs used. Designed for admin/faculty access only, with secure login and faculty ID validation.
 
-## 🔍 Overview
+## 🎯 Features
 
-This project is built using **Java Swing** and **MySQL**, allowing secure registration and login for faculty members. It includes user-friendly features like password hiding/showing, validation for correct faculty ID, and clean form transitions.
+- 🔐 **Login and Registration System**
+  - Admin/faculty can register and login securely.
+  - Faculty ID must be valid (verified from MySQL `fid` table).
+  - Re-enter password validation included.
 
-## 🧰 Features
+- 🧑‍🎓 **Student Record Management**
+  - View student details based on roll number from the database.
+  - Edit and Delete the student Details based on roll number from the database.
+  - And we can see Academic details of the Students. 
+  - Results displayed in a `JTable_studentdetails`-based UI.
 
-- 🔐 Faculty login with credential validation  
-- 📝 Registration page with:
-  - Faculty ID verification from database
-  - Password and confirm password matching
-  - Toggle password visibility
-- 🎯 GUI-based application with intuitive form layout
-- 📂 Connected to MySQL using JDBC
-- ❌ Error handling and input validations
+- 👁️ **Password Visibility Toggle**
+  - Show/hide password functionality using a checkbox.
+  - Hidden by default with dot `•` characters.
 
-## 📸 UI Screens
+- 🔄 **Navigation Between Screens**
+  - Seamless transitions between Login, Register, Welcome, Admin, and Info pages using `JFrame` controls.
 
-- Welcome Page  
-- Login Page  
-- Registration Page  
-- Admin Dashboard
+- ⚠️ **Form Validation & Error Handling**
+  - Empty field checks.
+  - Password match validation.
+  - Dialogs for incorrect login or invalid data using `JOptionPane`.
+
+- 🧩 **Modular Structure**
+  - Each screen in its own class (Login.java, Register.java, Admin.java, etc.).
+  - Easy to modify and scale.
+
+- 💡 **No External Libraries or Frameworks**
+  - Fully functional without Spring Boot, REST APIs, or third-party tools.
+
 
 ## 💻 Technologies Used
 
@@ -41,6 +52,8 @@ This project is built using **Java Swing** and **MySQL**, allowing secure regist
 - Table `regd`  
   - `UserName` (username of faculty)
   - `NewPass` (hashed or raw password - can be improved for security)
+
+- Table `studentdetails`
 
 ## 🚀 Getting Started
 
