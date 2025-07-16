@@ -365,7 +365,7 @@ public class Aboutadd extends javax.swing.JFrame {
         try{
             //Connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/aboutstu","root","Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/aboutstu","******","*********");
             
             PreparedStatement pstm = con.prepareStatement("INSERT INTO abostu (rollNo,c1, c2, c3, c4, c5, c6, c7, c8, a1, a2, a3, a4, a5, a6, a7, a8) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
             
