@@ -198,7 +198,7 @@ public class AddPage extends javax.swing.JFrame {
         try{
             //Connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails","root","Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/studentdetails","******","*********");
 
             PreparedStatement pstm = con.prepareStatement("INSERT INTO details (Rollno,Name,Marks,Results,Contact,Address) VALUES (?,?,?,?,?,?)");
 
