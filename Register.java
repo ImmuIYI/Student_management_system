@@ -164,7 +164,7 @@ public class Register extends javax.swing.JFrame {
         } 
             try{
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/regdetails","root","Immu@2602");
+                Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/regdetails","******","*********");
                 
                 PreparedStatement pstm = con.prepareStatement("SELECT * FROM fid WHERE id = ? ");
                 pstm.setString(1,facultyid);
@@ -196,7 +196,7 @@ public class Register extends javax.swing.JFrame {
         try{
                 //connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/regdetails","root","Immu@2602");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/regdetails","******","*********");
                 
             PreparedStatement pstm = con.prepareStatement("INSERT INTO regd (UserName, NewPass) VALUES(?,?)");
             pstm.setString(1,username);
